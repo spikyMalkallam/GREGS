@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+
+  <head>
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>GREGS Audience</title>
+    <!--Stop Overflow-->
+    <style src="text/css">* { padding: 0; margin: 0; 
+      overflow: hidden;
+    }</style>
+    <!-- Stop mobile zooming -->
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="icon" href="favicon.ico">
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Yellowtail&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.js"></script>
+    <div id="canvas">
+      <script type='text/javascript' src='js/mobile.js' ></script>
+      <!-- Login Part -->
+      <div id="login">
+        <p id="username_prompt">Who are you?</p>
+        <input type="text" id="username_box" placeholder="And you are...">
+        <div id="submit_username">
+          <input type="button" id="confirm_username" value="Submit" onclick="userNameSubmitted()">
+        </div>
+      </div>
+      <div id="waiting_div">
+        <p id="waiting_msg">SIT BACK AND RELAX</p>
+      </div>
+      <div id="submission_message_div">
+        <p id="submission_message">Thank you for your comment</p>
+      </div>
+
+      <div id="comment">
+        <input type="text" id="movie_comment" name="movie_comment" placeholder="Write something about the movie...">
+        <div id="submit_button">
+          <input type="button" id="confirm_comment" name="confirm_comment" value="Submit" onclick="commentSubmitted()">
+        </div>
+      </div>
+      <div id = "movie_title_div">
+        <p id="movie_title"></p>
+      </div>
+      
+    </div>
+    
+  </body>
+</html>
+
+<!--overflow: hidden;  -->
