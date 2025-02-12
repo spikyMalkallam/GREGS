@@ -164,7 +164,7 @@ function draw() {
 
 // When Submit clicked
 function commentSubmitted() {
-  fetch("localhost:3000", {
+  fetch("http://192.168.0.121:3000", {
     method: "POST",
     body: JSON.stringify({
       comment: commentBox.value,
