@@ -79,6 +79,7 @@ function setup() {
   // submitButton = document.getElementById("confirm_comment")
   commentBox = document.getElementById("movie_comment")
   movieTitle = document.getElementById("movie_title")
+  usernameDisplay = document.getElementById("username")
   submitMessage = document.getElementById("submission_message_div")
   waitingDiv = document.getElementById("waiting_div")
   // waitingMsg = document.getElementById("waiting_msg")
@@ -87,7 +88,7 @@ function setup() {
   // submitMessage.style.display = "none";
   // waitingDiv.style.display = "none";
   //
-  //document.cookie = "submitted=false; expires=Thu, 18 Dec 2033 12:00:00 UTC; path=/mobile"; 
+  //document.cookie = "username=; expires=Thu, 18 Dec 1970  12:00:00 UTC; path=/mobile"; 
 }
 
 function draw() {
@@ -106,9 +107,10 @@ function draw() {
   }
   // Check if username set
   if (getUserName() != '') {
-    //console.log("nuh")
     userNameSet = true
+    usernameDisplay.innerHTML = getUserName().toUpperCase()
   }
+  // Set the username
   
   // Set elements based on status
   // Make user login first

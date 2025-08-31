@@ -20,8 +20,8 @@ app.get('/mobile', function(req, res){
     res.sendFile(__dirname + '/public/html/mobile.html');
 });
 // Slideshow
-app.get('/powerPoint', function(req, res){
-    res.sendFile(__dirname + '/public/html/powerPoint.html');
+app.get('/slideshow', function(req, res){
+    res.sendFile(__dirname + '/public/html/slideshow.html');
 });
 // Slideshow controller
 app.get('/controller', function(req, res){

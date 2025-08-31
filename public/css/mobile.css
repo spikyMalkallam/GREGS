@@ -67,6 +67,7 @@
     z-index: 1;
     font-family: 'Almie';
 }
+
 #username_prompt {
     position: absolute;
     text-align:center; 
@@ -207,6 +208,19 @@
     right: 0;
     top: 40%;
     font-size: 250%;
+    height: fit-content;
+    color: crimson;
+    z-index: 1;
+    font-family: 'Almie';
+}
+
+#username_div {
+    position: absolute;
+    text-align:center; 
+    left: 0;
+    right: 0;
+    bottom: 1%;
+    font-size: 170%;
     height: fit-content;
     color: crimson;
     z-index: 1;
